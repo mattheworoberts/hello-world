@@ -22,9 +22,22 @@ namespace Hello_World
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        string strHello = "Hello";
+        string strWorld = "World";
+
         public MainPage()
         {
             this.InitializeComponent();
+        }
+
+        private void Show_Hello_World_Click(object sender, RoutedEventArgs e)
+        {
+            txtHelloWorld.Text = $"{strHello} {strWorld}";
+        }
+
+        private void Clear_Text_Click(object sender, RoutedEventArgs e)
+        {
+            txtHelloWorld.Text = String.Empty;
         }
     }
 }

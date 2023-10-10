@@ -5,3 +5,5 @@
 /.vs
 /Hello-World/.vs/Hello-World
 /Hello-World/Hello-World/obj
+/Hello-World/Hello-World/bin/x86/Debug/Core
+/Hello-World/Hello-World/bin/x86/Debug
