@@ -24,20 +24,22 @@ namespace Hello_World
     {
         string strHello = "Hello";
         string strWorld = "World";
+        public HelloWorldViewModel helloWorld { get; set; }
 
         public MainPage()
         {
             this.InitializeComponent();
+            this.helloWorld = new HelloWorldViewModel();
         }
 
         private void Show_Hello_World_Click(object sender, RoutedEventArgs e)
         {
-            txtHelloWorld.Text = $"{strHello} {strWorld}";
+            this.helloWorld.helloWorldViewModel = $"{strHello} {strWorld}";
         }
 
         private void Clear_Text_Click(object sender, RoutedEventArgs e)
         {
-            txtHelloWorld.Text = String.Empty;
+            this.helloWorld.helloWorldViewModel = String.Empty;
         }
     }
 }
