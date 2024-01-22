@@ -17,6 +17,7 @@ namespace Hello_World_NUnit_Test
         [TestMethod]
         public void TestHelloWorldMessageProperty()
         {
+            Assert.AreEqual(hw.helloWorldViewModel, string.Empty);
             const string msg = "Test String";
             hw.helloWorldViewModel = msg;
             Assert.AreEqual(hw.helloWorldViewModel, msg);
