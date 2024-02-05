@@ -1,3 +1,3 @@
 # hello-world
-First Repository
-First time on github.com
+
+UWP hello world app with two buttons
